@@ -4,7 +4,6 @@
 We are building a comprehensive benchmark for Arabic Language models tasks. This work is building upon the exceptional work of Evalharness by EleutherAI. As illustrated in the following table, we have seamlessly integrated a range of Arabic datasets:
 
 
-We are building a comprehensive benchmark for Arabic Language models tasks. This work is building upon the exceptional work of Evalharness by EleutherAI. As illustrated in the following table, we have seamlessly integrated a range of Arabic datasets:
 
 |                        Task Name                        |Train|Val|Test|Val/Test Docs|                                                                                     Metrics                                                                                     |
 |---------------------------------------------------------|-----|---|----|------------:|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
