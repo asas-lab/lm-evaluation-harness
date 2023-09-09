@@ -1,4 +1,7 @@
 # Language Model Evaluation Harness
+# Evalharness Arabic
+
+We are building a comprehensive benchmark for Arabic Language models tasks. This work is building upon the exceptional work of Evalharness by EleutherAI. As illustrated in the following table, we have seamlessly integrated a range of Arabic datasets:
 
 ## We're Refactoring LM-Eval!
 (as of 6/15/23)
@@ -8,7 +11,7 @@ We’d like your help to test it out! you can help by:
 1. Trying out your current workloads on the big-refactor branch, and seeing if anything breaks or is counterintuitive,
 2. Porting tasks supported in the previous version of the harness to the new YAML configuration format. Please check out our [task implementation guide](https://github.com/EleutherAI/lm-evaluation-harness/blob/big-refactor/docs/new_task_guide.md) for more information.
 
-If you choose to port a task not yet completed according to [our checklist](https://github.com/EleutherAI/lm-evaluation-harness/blob/big-refactor/lm_eval/tasks/README.md), then you can contribute it by opening a PR containing [Refactor] in the name with: 
+If you choose to port a task not yet completed according to [our checklist](https://github.com/EleutherAI/lm-evaluation-harness/blob/big-refactor/lm_eval/tasks/README.md), then you can contribute it by opening a PR containing [Refactor] in the name with:
 - A shell command to run the task in the `master` branch, and what the score is
 - A shell command to run the task in your PR branch to `big-refactor`, and what the resulting score is, to show that we achieve equality between the two implementations.
 

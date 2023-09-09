@@ -242,7 +242,7 @@ class MLQA(Task):
         # TODO: Fill in the `target` ("gold answer") variable.
         # The prepended `" "` is required to space out the `doc_to_text` and
         # `doc_to_target` strings.
-        target = doc['answer']['text']
+        target = doc['answers']['text'][0]
         return " " + target
 
     def doc_to_fewshot_prompt(self, doc):

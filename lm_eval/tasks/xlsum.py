@@ -73,7 +73,7 @@ class XLSUM(Task):
         # TODO: Fill in the `target` ("gold answer") variable.
         # The prepended `" "` is required to space out the `doc_to_text` and
         # `doc_to_target` strings.
-        target = doc['target']
+        target = doc['references']
         return " " + target
 
     def doc_to_fewshot_prompt(self, doc):
@@ -108,11 +108,12 @@ class XLSUM(Task):
         # TODO: For each (sub)metric in the task evaluation, add a key-value pair
         # with the metric name as key and the corresponding metric result as value
         # for the current `doc`.
-        ref_pred = (doc["target"], results)
+        ref_pred = (doc["references"], results[0])
         return {
             "bleu": ref_pred,
             "chrf": ref_pred,
             "ter": ref_pred,
+            "rougeLsum":ref_pred,
         }
 
 
@@ -126,6 +127,7 @@ class XLSUM(Task):
             "bleu": metrics.bleu,
             "chrf": metrics.chrf,
             "ter": metrics.ter,
+            "rougeLsum": metrics.rouge,
         }
 
     def higher_is_better(self):
@@ -138,6 +140,7 @@ class XLSUM(Task):
             "bleu": True,
             "chrf": True,
             "ter": False,
+            "rougeLsum": True,
         }
 
 

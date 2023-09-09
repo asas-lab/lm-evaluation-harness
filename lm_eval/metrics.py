@@ -5,6 +5,7 @@ import numpy as np
 import sacrebleu
 import sklearn.metrics
 import random
+import evaluate
 
 
 def mean(arr):
@@ -43,6 +44,16 @@ def f1_score(items):
     fscore = sklearn.metrics.f1_score(golds, preds)
 
     return np.max(fscore)
+
+def rouge(items):
+    rouge = evaluate.load('rouge')
+    unzipped_list = list(zip(*items))
+    golds = unzipped_list[0]
+    preds = unzipped_list[1]
+    r_score = rouge.compute(predictions=preds,
+                            references=golds)
+
+    return r_score['rougeLsum']
 
 
 def acc_all(items):

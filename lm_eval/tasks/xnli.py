@@ -239,7 +239,7 @@ class XNLI_ar(XNLIBase):  # Arabic
     QUESTION_WORD = "صحيح"
     ENTAILMENT_LABEL = "نعم"
     NEUTRAL_LABEL = "لذا"
-    CONTRADICTION_LABEL = "رقم"
+    CONTRADICTION_LABEL = "لا"
 
 
 class XNLI_bg(XNLIBase):  # Bulgarian

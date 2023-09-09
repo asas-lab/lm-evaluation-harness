@@ -64,10 +64,13 @@ from . import mgsm
 from . import scrolls
 from . import ceval
 from . import csatqa
+
 from . import xlsum
 from . import mlqa
 from . import arc_ar
 from . import flores
+from . import ajgt_twitter_ar
+from . import belebele_arabic
 ########################################
 # Translation tasks
 ########################################
@@ -328,10 +331,14 @@ TASK_REGISTRY = {
     "csatqa_rcss": csatqa.RCSS,
     "csatqa_rch": csatqa.RCH,
     "csatqa_li": csatqa.LI,
+    # Arabic tasks ==> These added by ASAS_LAB
     "xlsum": xlsum.XLSUM,
     "mlqa": mlqa.MLQA,
     "arc_ar": arc_ar.ARCChallenge_ar,
     "flores_en2ar": flores.Flores_en2ar,
+    "ajgt_twit": ajgt_twitter_ar.AJGT_twitter_ar,
+    "belebele_arabic": belebele_arabic.belebele_ar,
+    ####
     # Requires manual download
     # Requires manual download of data.
     # "storycloze_2016": storycloze.StoryCloze2016,

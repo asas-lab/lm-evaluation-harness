@@ -352,8 +352,8 @@ def evaluate(
             real_metric = metric.replace(
                 decontaminate_suffix, ""
             )  # decontaminated still uses the same metric
-        results[task_name][metric] = task.aggregation()[real_metric](items)
 
+        results[task_name][metric] = task.aggregation()[real_metric](items)
         # hotfix: bleu, chrf, ter seem to be really expensive to bootstrap
         # so we run them less iterations. still looking for a cleaner way to do this
 
@@ -366,11 +366,10 @@ def evaluate(
 
         if stderr is not None:
             results[task_name][metric + "_stderr"] = stderr(items)
-
     if write_out:
         import json
         import pathlib
-
+        print("############### ", output_base_path)
         output_base_path = (
             pathlib.Path(output_base_path)
             if output_base_path is not None

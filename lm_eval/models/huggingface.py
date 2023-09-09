@@ -163,7 +163,6 @@ class HuggingFaceAutoLM(BaseLM):
 
         """
         super().__init__()
-
         assert isinstance(pretrained, str)
         assert isinstance(device, str)
         assert isinstance(batch_size, (int, str))
