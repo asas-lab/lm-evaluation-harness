@@ -11,7 +11,7 @@ We are building a comprehensive benchmark for Arabic Language models tasks. This
 |xlsum                                                |✓     |✓  | ✓   |        9378|bleu, chrf, ter, rougeLsum                                                                                                                                                                        |
 |flores_en2ar                                                |     |✓  | ✓   |        2009|bleu, chrf, ter                                                                                                                                                                        |
 |arc_ar                                                |✓    |✓  | ✓   |        2934|acc, acc_norm                                                                                                                                                                        |
-|ajgt_twitter_ar                                                |    |  | ✓   |        1800|acc                                                                                                                                                                        |
+|ajgt_tw_ar                                                |    |  | ✓   |        1800|acc                                                                                                                                                                        |
 |belebele_ar                                                |    |  | ✓   |        5400|acc, acc_norm                                                                                                                                                                        |
 
 
