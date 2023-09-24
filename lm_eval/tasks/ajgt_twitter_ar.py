@@ -96,10 +96,10 @@ class AJGT_twitter_ar(Task):
             language description, as well as the few shot examples, and the question
             part of the document for `doc`.
         """
-        ll_positive = rf.loglikelihood_rolling(ctx.replace("[MASK]", self.self.negative_label))
+        ll_positive = rf.loglikelihood_rolling(ctx.replace("[MASK]", self.negative_label))
         ll_negative = rf.loglikelihood_rolling(ctx.replace("[MASK]", self.positive_label))
 
-        return ll_positive, ll_negative, ll_false
+        return ll_positive, ll_negative
 
     def process_results(self, doc, results):
         """Take a single document and the LM results and evaluates, returning a
