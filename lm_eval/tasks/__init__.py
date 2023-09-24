@@ -336,8 +336,8 @@ TASK_REGISTRY = {
     "mlqa": mlqa.MLQA,
     "arc_ar": arc_ar.ARCChallenge_ar,
     "flores_en2ar": flores.Flores_en2ar,
-    "ajgt_twit": ajgt_twitter_ar.AJGT_twitter_ar,
-    "belebele_arabic": belebele_arabic.belebele_ar,
+    "ajgt_tw_ar": ajgt_twitter_ar.AJGT_twitter_ar,
+    "belebele_ar": belebele_arabic.belebele_ar,
     ####
     # Requires manual download
     # Requires manual download of data.
